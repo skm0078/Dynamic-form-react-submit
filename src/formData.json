@@ -29,6 +29,15 @@
        "fieldtype": "multiselect",
        "options": ["Loan","Bad Debt","Assets","Liabilities"],
        "fieldvalue":[]
+     },
+     {
+      "fieldname": "CheckboxType",
+      "fieldplaceholder": "",
+      "fieldlabel":"Multi Account Checkbox Type",
+      "fieldrules":[],
+       "fieldtype": "checkbox",
+       "options": [],
+       "fieldvalue":"false"
      }
      ]
   }

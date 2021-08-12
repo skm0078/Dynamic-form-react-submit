@@ -74,9 +74,19 @@ function App() {
     // console.log(selectedList);
   };
 
+  const handleCheckboxChange=()=>{
+    const newElements = { ...elements }; 
+    newElements["data"].forEach((field) => {
+      const { fieldvalue } = field;
+      if (!fieldvalue) {
+        // To be implemented
+      }
+    });
+   }
+
   return (
     <FormContext.Provider
-      value={{ handleChange, onSelectHandler, onRemoveHandler }}
+      value={{ handleChange, onSelectHandler, onRemoveHandler ,handleCheckboxChange}}
     >
       <div className="App container">
         <h3>{formName}</h3>
